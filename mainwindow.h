@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include "taller.h"
+#include "tabla.h"
 
 namespace Ui {
 class MainWindow;
@@ -25,9 +26,14 @@ private slots:
 
     void on_actionAbrir_triggered();
 
+    void on_pushButton_3_clicked();
+
+    void on_pushButton_4_clicked();
+
 private:
     Ui::MainWindow *ui;
     Taller taller;
+    Tabla tabla;
 };
 
 #endif // MAINWINDOW_H

@@ -93,3 +93,28 @@ void MainWindow::on_actionAbrir_triggered()
 
     taller.recuperar(ubicacion.toStdString());
 }
+
+void MainWindow::on_pushButton_3_clicked()
+{
+    tabla.show();
+    tabla.mostrarTabla(taller);
+}
+
+void MainWindow::on_pushButton_4_clicked()
+{
+    QString placas  = ui->lineEdit->text();
+    QString modelo  = ui->spinBox->text();
+    QString km      = ui->spinBox_2->text();
+    QString marca   = ui->lineEdit_4->text();
+
+    Automovil a;
+
+    a.setPlacas(placas.toStdString());
+    a.setModelo(modelo.toInt());
+    a.setKm(km.toInt());
+    a.setMarca(marca.toStdString());
+
+    size_t n = ui->spinBox_3->value();
+
+    taller.inicializar(n, a);
+}

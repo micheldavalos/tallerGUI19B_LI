@@ -28,15 +28,18 @@ SOURCES += \
         automovil.cpp \
         main.cpp \
         mainwindow.cpp \
+        tabla.cpp \
         taller.cpp
 
 HEADERS += \
         automovil.h \
         mainwindow.h \
+        tabla.h \
         taller.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+        tabla.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
